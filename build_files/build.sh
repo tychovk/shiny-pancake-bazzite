@@ -27,5 +27,5 @@ dnf5 install -y msr-tools systemd
 
 systemctl enable podman.socket
 # Throttlestop: Load MSR kernel module
-sudo modprobe msr
+modprobe msr
 
