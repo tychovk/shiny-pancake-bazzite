@@ -26,6 +26,6 @@ dnf5 install -y msr-tools systemd
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-# Throttlestop: Load MSR kernel module
-modprobe msr
+# Throttlestop: Load MSR kernel module (resulted in build failed)
+# modprobe msr
 
