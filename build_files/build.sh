@@ -10,7 +10,11 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y tmux
+# Throttlestop: install msr-tools systemd
+dnf5 install -y msr-tools systemd
+# Div Acer Manager (Predator turbo and fan control)
+#curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
 # Use a COPR Example:
 #
@@ -22,3 +26,6 @@ dnf5 install -y tmux
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+# Throttlestop: Load MSR kernel module
+sudo modprobe msr
+
