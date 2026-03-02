@@ -13,8 +13,8 @@ set -ouex pipefail
 dnf5 install -y tmux
 # Throttlestop: install msr-tools systemd
 dnf5 install -y msr-tools systemd
-# Div Acer Manager (Predator turbo and fan control)
-sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
+# Div Acer Manager (Predator turbo and fan control) -- read install script and replicate on custom img
+# sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
 # Use a COPR Example:
 #
@@ -26,6 +26,6 @@ sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/ref
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-# Throttlestop: Load MSR kernel module (resulted in build failed)
-# modprobe msr
+# Throttlestop: add conf to load MSR kernel module
+echo "msr" > /etc/modules-load.d/msr.conf
 
