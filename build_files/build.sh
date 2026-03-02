@@ -14,7 +14,7 @@ dnf5 install -y tmux
 # Throttlestop: install msr-tools systemd
 dnf5 install -y msr-tools systemd
 # Div Acer Manager (Predator turbo and fan control)
-#curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
+curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
 # Use a COPR Example:
 #
