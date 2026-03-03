@@ -11,8 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux
-# Throttlestop: install msr-tools systemd
-dnf5 install -y msr-tools systemd
+# Throttlestop: install msr-tools
+dnf5 install -y msr-tools
 # Div Acer Manager (Predator turbo and fan control) -- read install script and replicate on custom img
 # sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
