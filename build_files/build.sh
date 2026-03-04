@@ -10,11 +10,11 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y \
-tmux \
+dnf5 install -y tmux
 # Throttlestop: install msr-tools
-msr-tools \
-lutris
+dnf5 install -y msr-tools
+# App to manage game collection
+dnf5 install -y lutris
 # Div Acer Manager (Predator turbo and fan control) -- read install script and replicate on custom img
 # sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
