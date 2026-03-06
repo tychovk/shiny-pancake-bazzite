@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux
 # Throttlestop: install msr-tools
-dnf5 install -y msr-tools
+dnf5 install -y msr-tools systemd
 # App to manage game collection
 # dnf5 install -y lutris
 # Div Acer Manager (Predator turbo and fan control) -- read install script and replicate on custom img
