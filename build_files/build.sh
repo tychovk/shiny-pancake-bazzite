@@ -14,7 +14,7 @@ dnf5 install -y tmux
 # Throttlestop: install msr-tools
 dnf5 install -y msr-tools
 # App to manage game collection
-#dnf5 install -y lutris
+# dnf5 install -y lutris
 # Div Acer Manager (Predator turbo and fan control) -- read install script and replicate on custom img
 # sudo curl -fsSL https://raw.githubusercontent.com/PXDiv/Div-Acer-Manager-Max/refs/heads/main/scripts/remoteSetup.sh -o /tmp/setup.sh && sudo bash /tmp/setup.sh
 
@@ -28,6 +28,4 @@ dnf5 install -y msr-tools
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-# Throttlestop: add conf to load MSR kernel module
-#echo "msr" > /etc/modules-load.d/msr.conf
 
