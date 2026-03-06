@@ -29,5 +29,5 @@ dnf5 install -y lutris
 
 systemctl enable podman.socket
 # Throttlestop: add conf to load MSR kernel module
-echo "msr" > /etc/modules-load.d/msr.conf
+#echo "msr" > /etc/modules-load.d/msr.conf
 
